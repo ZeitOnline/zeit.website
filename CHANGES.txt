@@ -1,0 +1,9 @@
+zeit.website changes
+====================
+
+
+1.0 (unreleased)
+------------------
+
+- Set up section interfaces: IWebsiteSection, IWebsiteContent, IWebsiteArticle,
+  IWebsiteFolder
