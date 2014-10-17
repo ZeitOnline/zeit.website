@@ -14,4 +14,4 @@ def provide_website_content(content, event):
     for iface in zope.interface.providedBy(content):
         if issubclass(iface, ISectionMarker):
             zope.interface.noLongerProvides(content, iface)
-    zope.interface.alsoProvides(content, zeit.website.interfaces.IWebsiteContent)
+    zope.interface.alsoProvides(content, zeit.website.interfaces.IWebsiteSection)
