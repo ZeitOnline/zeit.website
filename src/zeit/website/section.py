@@ -1,11 +1,13 @@
-import zeit.cms.interfaces
+import zeit.website.interfaces
+from zeit.cms.section.interfaces import ISectionMarker
 import grokcore.component as grok
 import zeit.cms.checkout.interfaces
+import zeit.cms.content.interfaces
 import zope.interface
-from zeit.cms.section.interfaces import ISectionMarker
+
 
 @grok.subscribe(
-    zeit.cms.interfaces.ICMSContent,
+    zeit.cms.content.interfaces.ICommonMetadata,
     zeit.cms.checkout.interfaces.IBeforeCheckinEvent)
 def provide_website_content(content, event):
     content = zope.security.proxy.getObject(content)
