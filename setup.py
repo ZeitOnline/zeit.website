@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='zeit.website',
-    version='0.5.dev0',
+    version='1.0',
     author='Dominik Hoppe',
     author_email='dominik.hoppe@zeit.de',
     url='',
