@@ -12,6 +12,8 @@ import zope.interface
 def provide_website_content(content, event):
     content = zope.security.proxy.getObject(content)
     if not content.rebrush_website_content:
+        zope.interface.noLongerProvides(content,
+            zeit.website.interfaces.IWebsiteSection)
         return
     for iface in zope.interface.providedBy(content):
         if issubclass(iface, ISectionMarker):
