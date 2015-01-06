@@ -41,8 +41,8 @@ class ArticleTemplateTest(
         self.assertEqual(
             kolumne_layouts,
             s.getSelectOptions('id=options-website.header_layout'))
-        s.click('options-website.actions.apply')
-        s.pause(250)
+        s.type('id=options-website.header_layout', '\t')
+        s.pause(500)
         self.assertEqual(
             kolumne_layouts,
             s.getSelectOptions('id=options-website.header_layout'))
