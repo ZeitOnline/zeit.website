@@ -1,18 +1,18 @@
 from setuptools import setup, find_packages
 
+
 setup(
     name='zeit.website',
     version='1.1.dev0',
-    author='Dominik Hoppe',
-    author_email='dominik.hoppe@zeit.de',
-    url='',
-    description="""\
-""",
+    author='gocept, Zeit Online',
+    author_email='zon-backend@zeit.de',
+    url='http://www.zeit.de/',
+    description="",
     packages=find_packages('src'),
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
-    license='gocept proprietary',
+    license='BSD',
     namespace_packages=['zeit'],
     install_requires=[
         'gocept.httpserverlayer',
