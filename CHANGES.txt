@@ -2,8 +2,8 @@ zeit.website changes
 ====================
 
 
-1.1 (unreleased)
-----------------
+1.0.1 (2015-07-24)
+------------------
 
 - Remove copy&paste artifacts (TemplateSettings, RelatedLayout).
 
