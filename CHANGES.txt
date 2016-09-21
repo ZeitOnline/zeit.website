@@ -2,10 +2,10 @@ zeit.website changes
 ====================
 
 
-1.0.2 (unreleased)
+1.1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update to `zeit.cms >= 2.90`.
 
 
 1.0.1 (2015-07-24)
