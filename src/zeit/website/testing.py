@@ -24,9 +24,9 @@ product_config = """\
 
 ZCML_LAYER = zeit.cms.testing.ZCMLLayer(
     'ftesting.zcml', product_config=(
-        product_config
-        + cms_product_config
-        + zeit.content.article.testing.product_config))
+        product_config +
+        cms_product_config +
+        zeit.content.article.testing.product_config))
 
 
 class Layer(plone.testing.Layer):
